@@ -60,7 +60,50 @@
 }
 .about {
   margin-bottom: 50px;
+  padding: 15px;
 }
 .about p {
   margin-bottom: 20px;
+}
+.item {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.item:last-child {
+  margin-bottom: 100px;
+}
+.itemLeft {
+  flex: 1 1 25%;
+}
+.itemRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item:hover {
+  background-color: rgba(148, 163, 184, 0.1);
+  border-radius: 10px;
+  border: none;
+}
+.item:hover .itemRightTitle h3 {
+  color: #47b3a7;
+}
+.itemRightTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.itemRightTitle span svg {
+  width: 14px;
+  height: 14px;
+}
+.item:hover .itemRightTitle span svg {
+  transform: translate(5px, -5px);
+  transition: transform 0.2s;
+  stroke: #47b3a7;
+}
+.itemRight p {
+  word-break: break-all;
 }

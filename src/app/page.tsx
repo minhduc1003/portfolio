@@ -2,6 +2,8 @@ import style from "./page.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
+import ExperienceItem from "./components/ExperienceItem";
+import ProjectItem from "./components/ProjectItem";
 export default function Home() {
   return (
     <main className={style.main}>
@@ -50,6 +52,20 @@ export default function Home() {
             hanging out with my wife and two cats, or running around Hyrule
             searching for Korok seeds K o r o k s e e d s .
           </p>
+        </div>
+        <div>
+          {Array(5)
+            .fill(0)
+            .map((item, i) => (
+              <ExperienceItem key={i} />
+            ))}
+        </div>
+        <div>
+          {Array(5)
+            .fill(0)
+            .map((item, i) => (
+              <ProjectItem key={i} />
+            ))}
         </div>
       </aside>
     </main>

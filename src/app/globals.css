@@ -20,4 +20,12 @@ h3 {
 }
 p {
   color: #808da2;
+  text-align: justify;
+}
+.category {
+  color: #47b3a7;
+  background-color: #112b3a;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
 }
