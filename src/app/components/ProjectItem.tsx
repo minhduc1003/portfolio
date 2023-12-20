@@ -1,12 +1,13 @@
 import Image from "next/image";
 import style from "../page.module.css";
 import Category from "./Category";
-const ProjectItem = () => {
+import { IProject } from "../project";
+const ProjectItem = ({ item }: { item: IProject }) => {
   return (
     <div className={style.item}>
       <div className={style.itemLeft}>
         <Image
-          src="https://hatrabbits.com/wp-content/uploads/2017/01/random-word-1.jpg"
+          src={item.image || "https://i.ibb.co/fYYdYSG/server.jpg"}
           width={120}
           height={65}
           alt="Picture of the author"
@@ -15,7 +16,7 @@ const ProjectItem = () => {
       </div>
       <div className={style.itemRight}>
         <div className={style.itemRightTitle}>
-          <h3>sạhgdas</h3>
+          <h3>{item.title}</h3>
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,10 +34,14 @@ const ProjectItem = () => {
           </span>
         </div>
         <p>
-          jasbdjasbdsajbdsjhasbdjhasbdjhsabdhjsbahjsdbahsadsadasdasdasghdasjsdbgajkdbshjbashjgbjsdbahjdbashjb
+          {item.desc}
         </p>
         <div className={style.list}>
-          <Category></Category>
+          {
+            item.categories.map(cate => (
+              <Category key={cate.id} cate={cate} ></Category>
+            ))
+          }
         </div>
       </div>
     </div>

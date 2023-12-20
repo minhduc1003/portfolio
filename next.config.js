@@ -4,10 +4,16 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "hatrabbits.com",
+        hostname: "i.ibb.co",
         port: "",
-        pathname: "/wp-content/uploads/2017/01/**",
+        pathname: "/fYYdYSG/**",
       },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+        port: "",
+        pathname: "/fHZ7gTS/**",
+      }, 
     ],
   },
 };

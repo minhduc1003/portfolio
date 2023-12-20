@@ -3,9 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0f172a;
 }
+
 .pointer {
   pointer-events: none;
   position: fixed;
@@ -14,18 +20,29 @@ body {
   transition: all 300s;
   position: absolute;
 }
+
 h1,
 h3 {
   color: #e2e8f0;
 }
+
 p {
   color: #808da2;
   text-align: justify;
 }
+
 .category {
   color: #47b3a7;
   background-color: #112b3a;
   padding: 10px;
   border-radius: 10px;
   width: fit-content;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-download {
+  text-decoration: none;
+  border-radius: 5px;
 }
