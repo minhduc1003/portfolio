@@ -157,3 +157,52 @@
 .itemRight p {
   word-break: break-all;
 }
+
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: unset;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .textHeader {
+    max-width: 400px;
+  }
+
+  .textWrapper .textHeader h1 {
+    font-size: 80px;
+    margin-bottom: 15px;
+  }
+
+  .textWrapper .textHeader h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .textWrapper .textHeader p {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .linkIcon {
+
+    margin-top: 10px;
+  }
+
+  .rightSide {
+    margin-top: 0;
+    max-width: unset;
+  }
+}

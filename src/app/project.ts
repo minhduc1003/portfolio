@@ -12,7 +12,7 @@ export interface IProject {
 export const project: IProject[] = [
   {
     id: 1,
-    image: "",
+    image: "https://i.ibb.co/4VbBTHT/image.png",
     title: "CrowFunding",
     desc: "web to make donations include feature Login, register, add campaigns, view existing campaigns",
     linkWeb: "",
@@ -77,7 +77,7 @@ export const project: IProject[] = [
   },
   {
     id: 3,
-    image: "",
+    image: "https://i.ibb.co/xjK0JGW/image.png",
     title: "Movie web",
     desc: "Watch currently available movies",
     linkWeb: "",

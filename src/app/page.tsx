@@ -47,7 +47,6 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [scroll])
-  // 400 1400
   return (
     <>
       <main className={style.main}>
@@ -66,7 +65,7 @@ export default function Home() {
               <a href="#experience" className={active.experience ? style.active : ""}>EXPERIENCE</a>
               <a href="#project" className={active.project ? style.active : ""}>PROJECT</a>
             </div>
-            <a className="category btn-download " href="vuminhduc.pdf" download="Vũ Minh Đức.pdf">Download My CV</a>
+            <a className="category btn-download " href="Vũ Minh Đức.pdf" download="Vũ Minh Đức.pdf">Download My CV</a>
           </div>
           <div className={style.linkIcon}>
             <a href="">
