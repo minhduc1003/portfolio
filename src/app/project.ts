@@ -1,13 +1,13 @@
 import { ICategories } from "./experience";
 
 export interface IProject {
-  id: number,
-  image: string,
-  title: string,
-  desc: string,
-  linkWeb: string,
-  linkGit: string,
-  categories: ICategories[],
+  id: number;
+  image: string;
+  title: string;
+  desc: string;
+  linkWeb: string;
+  linkGit: string;
+  categories: ICategories[];
 }
 export const project: IProject[] = [
   {
@@ -27,7 +27,8 @@ export const project: IProject[] = [
         name: "NodeJs",
       },
     ],
-  }, {
+  },
+  {
     id: 2,
     image: "",
     title: "server for web sales",
@@ -45,16 +46,16 @@ export const project: IProject[] = [
       },
       {
         id: 3,
-        name: "bcrypt"
+        name: "bcrypt",
       },
       {
-        id: 3,
-        name: "nodemailer"
+        id: 4,
+        name: "nodemailer",
       },
       {
         id: 5,
-        name: "multer"
-      }
+        name: "multer",
+      },
     ],
   },
   {
@@ -76,7 +77,7 @@ export const project: IProject[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: "https://i.ibb.co/xjK0JGW/image.png",
     title: "Movie web",
     desc: "Watch currently available movies",
@@ -92,5 +93,5 @@ export const project: IProject[] = [
         name: "NodeJs",
       },
     ],
-  }
+  },
 ];

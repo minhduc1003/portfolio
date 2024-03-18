@@ -2,9 +2,12 @@ import Image from "next/image";
 import style from "../page.module.css";
 import Category from "./Category";
 import { IProject } from "../project";
-const ProjectItem = ({ item }: { item: IProject }) => {
+const ProjectItem = ({ item, sentData }: { item: IProject; sentData: any }) => {
+  const handleClick = (item: any) => {
+    sentData(item);
+  };
   return (
-    <div className={style.item}>
+    <div className={style.item} onClick={() => handleClick(item)}>
       <div className={style.itemLeft}>
         <Image
           src={item.image || "https://i.ibb.co/fYYdYSG/server.jpg"}
@@ -33,15 +36,11 @@ const ProjectItem = ({ item }: { item: IProject }) => {
             </svg>
           </span>
         </div>
-        <p>
-          {item.desc}
-        </p>
+        <p>{item.desc}</p>
         <div className={style.list}>
-          {
-            item.categories.map(cate => (
-              <Category key={cate.id} cate={cate} ></Category>
-            ))
-          }
+          {item.categories.map((cate) => (
+            <Category key={cate.id} cate={cate}></Category>
+          ))}
         </div>
       </div>
     </div>
