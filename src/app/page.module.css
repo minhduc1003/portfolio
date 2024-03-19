@@ -30,7 +30,6 @@
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -156,8 +155,9 @@
   stroke: #47b3a7;
 }
 
-.itemRight p {
-  word-break: break-all;
+.itemRight p span {
+  color: white;
+  display: inline;
 }
 .detailProject {
   position: fixed;

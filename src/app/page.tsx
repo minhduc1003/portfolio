@@ -10,6 +10,7 @@ import { exp } from "./experience";
 import { project } from "./project";
 import axios from "axios";
 import DetailProject from "./components/DetailProject";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
   const [scroll, setScroll] = useState<any>(0);
   const [countClick, setCountClick] = useState<number>(0);
@@ -21,14 +22,14 @@ export default function Home() {
   });
   const handleScroll = () => {
     setScroll(window.scrollY);
-    if (scroll >= 0 && scroll < 330) {
+    if (scroll >= 0 && scroll < 354) {
       setActive({
         about: true,
         experience: false,
         project: false,
       });
     } else {
-      if (scroll >= 330 && scroll < 1160) {
+      if (scroll >= 354 && scroll < 1149) {
         setActive({
           about: false,
           experience: true,
@@ -62,22 +63,46 @@ export default function Home() {
             <div className={style.textHeader}>
               <h1>Minh Duc</h1>
               <h3>Front-End and Back-End Engineer</h3>
-              <p>
-                I build exceptional and accessible digital experiences for the
-                web.
-              </p>
+              <p>I build exceptional and accessible experiences for the web.</p>
             </div>
             <div className={style.nav}>
-              <a href="#about" className={active.about ? style.active : ""}>
+              <a
+                href="#about"
+                className={active.about ? style.active : ""}
+                onClick={() => {
+                  setActive({
+                    about: true,
+                    experience: false,
+                    project: false,
+                  });
+                }}
+              >
                 ABOUT
               </a>
               <a
                 href="#experience"
                 className={active.experience ? style.active : ""}
+                onClick={() => {
+                  setActive({
+                    about: false,
+                    experience: true,
+                    project: false,
+                  });
+                }}
               >
                 EXPERIENCE
               </a>
-              <a href="#project" className={active.project ? style.active : ""}>
+              <a
+                href="#project"
+                className={active.project ? style.active : ""}
+                onClick={() => {
+                  setActive({
+                    about: false,
+                    experience: false,
+                    project: true,
+                  });
+                }}
+              >
                 PROJECT
               </a>
             </div>
@@ -102,20 +127,15 @@ export default function Home() {
           <div id="about" className={style.about}>
             <p>
               Hi there! Duc is my name, and I&apos;m currently 20 years old. I
-              started learning the fundamentals of web two years ago since I
-              always liked technology and I wanted to learn about web
-              development. As of right moment, I have two years of FE and BE
-              knowledge.
+              started learning the fundamentals of the web two years ago because
+              I liked technology. I wanted to learn about web development. At
+              the moment, I have a lot of experience in both front-end and
+              back-end knowledge
             </p>
             <p>
-              These days, learning to construct mining set code and gaining
-              experience from someone else are my key priorities.I work on
-              projects every day to broaden my experience.
-            </p>
-            <p>
-              I like to run around Dieu Hoa Lake or play football while I&apos;m
-              not at the computer. I adore playing first-person shooter games
-              with my friend in my free time.
+              These days, my key priorities are learning to construct mining set
+              code and gaining experience from others. I work on projects every
+              day to broaden my experience.
             </p>
           </div>
           <div id="experience">

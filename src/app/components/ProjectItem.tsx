@@ -7,7 +7,11 @@ const ProjectItem = ({ item, sentData }: { item: IProject; sentData: any }) => {
     sentData(item);
   };
   return (
-    <div className={style.item} onClick={() => handleClick(item)}>
+    <div
+      className={style.item}
+      style={{ cursor: "pointer" }}
+      onClick={() => handleClick(item)}
+    >
       <div className={style.itemLeft}>
         <Image
           src={item.image || "https://i.ibb.co/fYYdYSG/server.jpg"}
@@ -36,7 +40,10 @@ const ProjectItem = ({ item, sentData }: { item: IProject; sentData: any }) => {
             </svg>
           </span>
         </div>
-        <p>{item.desc}</p>
+        <p>
+          {item?.subDesc}
+          <span>Click here to see core features</span>
+        </p>
         <div className={style.list}>
           {item.categories.map((cate) => (
             <Category key={cate.id} cate={cate}></Category>

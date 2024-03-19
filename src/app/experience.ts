@@ -12,7 +12,7 @@ export interface ICategories {
 export const exp: IExp[] = [
   {
     id: 1,
-    time: "25/9/2023-Present",
+    time: "25/9/2023-20/12/2023",
     title: "Working at SAVIS group",
     desc: "I work as a .Net, Angular, and AngularJs intern at Savis Group.",
     categories: [

@@ -3,6 +3,7 @@ import style from "../page.module.css";
 import { IProject, project } from "../project";
 import Category from "./Category";
 import useClickOutside from "../hooks/useClickOutSide";
+import Image from "next/image";
 
 const DetailProject = ({
   receiveData,
@@ -44,7 +45,12 @@ const DetailProject = ({
             </svg>
           </div>
           <div className={style.imageWrapper}>
-            <img src={receiveData?.image} alt="img" />
+            <Image alt="image" 
+                src={receiveData?.image}
+                width={100}
+                height={100}
+                sizes='(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px'
+                style={{objectFit:"cover"}}/>
           </div>
           <h2 className={style.title}>{receiveData?.title}</h2>
           <div className={style.list} style={{ marginTop: "15px" }}>
