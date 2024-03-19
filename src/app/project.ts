@@ -6,41 +6,51 @@ export interface IProject {
   title: string;
   descFE?: string;
   descBE?: string;
-  desc?: string;
-  subDesc?: string;
+  subDesc: string;
   linkWeb: string;
-  linkGit: string;
+  linkGit: string[];
   categories: ICategories[];
 }
 export const project: IProject[] = [
   {
     id: 1,
-    image: "https://i.ibb.co/4VbBTHT/image.png",
+    image: "/social.png",
     title: "Social Projects",
-    descFE: "",
-    descBE: "",
-    subDesc:"Web to create for communication and post a posts to friend see it. ",
+    descFE:
+      "Fe use redux for storing data when fetching data from backend and socketIo to communicate real time to backend, many custom hooks.",
+    descBE:
+      "Be use JWT to authenticate, CRUD posts share comment like posts, add friend and use socketIo to communicate.",
+    subDesc:
+      "Web to create for communication and post a posts to friend see it. ",
     linkWeb: "",
-    linkGit: "https://github.com/minhduc1003/crowFunding",
+    linkGit: [
+      "https://github.com/minhduc1003/social-app",
+      "https://github.com/minhduc1003/social-app-backend",
+    ],
     categories: [
       {
         id: 1,
-        name: "ReactJs",
+        name: "NextJs",
       },
       {
         id: 2,
         name: "NodeJs",
       },
     ],
-  },  
+  },
   {
     id: 2,
-    image: "https://i.ibb.co/fHZ7gTS/blog.png",
+    image: "/blog.png",
     title: "Blog Website",
-    desc: "",
-    subDesc:"Web blogs are created for authors to share information, knowledge, opinions and experiences with readers. ",
+    descFE: "Use angular http service to fetch data from backend.",
+    descBE: "Be use JWT to authenticate, CRUD blog.",
+    subDesc:
+      "Web blogs are created for authors to share information, knowledge, opinions and experiences with readers.",
     linkWeb: "",
-    linkGit: "https://github.com/minhduc1003/Blogs",
+    linkGit: [
+      "https://github.com/minhduc1003/blog-angular-fe",
+      "https://github.com/minhduc1003/blog-.Net-be",
+    ],
     categories: [
       {
         id: 1,
@@ -54,13 +64,13 @@ export const project: IProject[] = [
   },
   {
     id: 3,
-    image: "https://i.ibb.co/4VbBTHT/image.png",
+    image: "/cf.png",
     title: "CrowFunding",
-    descFE: "",
-    descBE: "",
-    subDesc:"Web to create donations campaigns. ",
+    descFE: "Fe use redux for storing data when fetching data from backend.",
+    descBE: "Be use JWT to authenticate, CRUD campaign.",
+    subDesc: "Web to create donations campaigns. ",
     linkWeb: "",
-    linkGit: "https://github.com/minhduc1003/crowFunding",
+    linkGit: ["https://github.com/minhduc1003/crowFunding"],
     categories: [
       {
         id: 1,
@@ -74,20 +84,16 @@ export const project: IProject[] = [
   },
   {
     id: 4,
-    image: "https://i.ibb.co/xjK0JGW/image.png",
+    image: "/movie.png",
     title: "Movie web",
-    desc: "",
+    descFE: "Fetching data from themoviedb",
     subDesc: "Watch currently available movies. ",
     linkWeb: "",
-    linkGit: "https://github.com/minhduc1003/movie-app",
+    linkGit: ["https://github.com/minhduc1003/movie-app"],
     categories: [
       {
         id: 1,
         name: "ReactJs",
-      },
-      {
-        id: 2,
-        name: "NodeJs",
       },
     ],
   },

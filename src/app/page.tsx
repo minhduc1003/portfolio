@@ -12,7 +12,7 @@ import axios from "axios";
 import DetailProject from "./components/DetailProject";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
-  const [scroll, setScroll] = useState<any>(0);
+  const [scroll, setScroll] = useState<number>(0);
   const [countClick, setCountClick] = useState<number>(0);
   const [receiveData, setReceiveData] = useState<any>();
   const [active, setActive] = useState({
@@ -22,26 +22,26 @@ export default function Home() {
   });
   const handleScroll = () => {
     setScroll(window.scrollY);
-    if (scroll >= 0 && scroll < 354) {
+    if (scroll >= 0 && scroll < 334) {
       setActive({
         about: true,
         experience: false,
         project: false,
       });
-    } else {
-      if (scroll >= 354 && scroll < 1149) {
-        setActive({
-          about: false,
-          experience: true,
-          project: false,
-        });
-      } else {
-        setActive({
-          about: false,
-          experience: false,
-          project: true,
-        });
-      }
+    }
+    if (scroll >= 334 && scroll < 1149) {
+      setActive({
+        about: false,
+        experience: true,
+        project: false,
+      });
+    }
+    if (scroll > 1149) {
+      setActive({
+        about: false,
+        experience: false,
+        project: true,
+      });
     }
   };
   const receiveId = (item: number) => {
@@ -51,6 +51,7 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     console.log(scroll);
+    console.log(active);
     () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -66,43 +67,16 @@ export default function Home() {
               <p>I build exceptional and accessible experiences for the web.</p>
             </div>
             <div className={style.nav}>
-              <a
-                href="#about"
-                className={active.about ? style.active : ""}
-                onClick={() => {
-                  setActive({
-                    about: true,
-                    experience: false,
-                    project: false,
-                  });
-                }}
-              >
+              <a href="#about" className={active.about ? style.active : ""}>
                 ABOUT
               </a>
               <a
                 href="#experience"
                 className={active.experience ? style.active : ""}
-                onClick={() => {
-                  setActive({
-                    about: false,
-                    experience: true,
-                    project: false,
-                  });
-                }}
               >
                 EXPERIENCE
               </a>
-              <a
-                href="#project"
-                className={active.project ? style.active : ""}
-                onClick={() => {
-                  setActive({
-                    about: false,
-                    experience: false,
-                    project: true,
-                  });
-                }}
-              >
+              <a href="#project" className={active.project ? style.active : ""}>
                 PROJECT
               </a>
             </div>
