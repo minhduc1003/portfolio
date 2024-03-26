@@ -19,7 +19,7 @@ export const project: IProject[] = [
     descFE:
       "Fe use redux for storing data when fetching data from backend and socketIo to communicate real time to backend, many custom hooks.",
     descBE:
-      "Be use JWT to authenticate, CRUD posts share comment like posts, add friend and use socketIo to communicate.",
+      "Be use JWT to authenticate, CRUD posts share comment like posts, add friend and use socketIo to communicate. Deploying by docker in linux server.",
     subDesc:
       "Web to create for communication and post a posts to friend see it. ",
     linkWeb: "",
@@ -43,7 +43,8 @@ export const project: IProject[] = [
     image: "/blog.png",
     title: "Blog Website",
     descFE: "Use angular http service to fetch data from backend.",
-    descBE: "Be use JWT to authenticate, CRUD blog.",
+    descBE:
+      "Be use JWT to authenticate, CRUD blog. Deploying by docker in linux server.",
     subDesc:
       "Web blogs are created for authors to share information, knowledge, opinions and experiences with readers.",
     linkWeb: "",
@@ -67,7 +68,8 @@ export const project: IProject[] = [
     image: "/cf.png",
     title: "CrowFunding",
     descFE: "Fe use redux for storing data when fetching data from backend.",
-    descBE: "Be use JWT to authenticate, CRUD campaign.",
+    descBE:
+      "Be use JWT to authenticate, CRUD campaign. Deploying by docker in linux server.",
     subDesc: "Web to create donations campaigns. ",
     linkWeb: "",
     linkGit: ["https://github.com/minhduc1003/crowFunding"],

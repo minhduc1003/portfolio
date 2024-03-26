@@ -22,21 +22,21 @@ export default function Home() {
   });
   const handleScroll = () => {
     setScroll(window.scrollY);
-    if (scroll >= 0 && scroll < 334) {
+    if (scroll >= 0 && scroll < 250) {
       setActive({
         about: true,
         experience: false,
         project: false,
       });
     }
-    if (scroll >= 334 && scroll < 1149) {
+    if (scroll >= 250 && scroll < 1000) {
       setActive({
         about: false,
         experience: true,
         project: false,
       });
     }
-    if (scroll > 1149) {
+    if (scroll >= 1000) {
       setActive({
         about: false,
         experience: false,
