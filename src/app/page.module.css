@@ -130,13 +130,12 @@
   gap: 20px;
 }
 
-.item:hover {
+.item:not(.disable):hover {
   background-color: rgba(148, 163, 184, 0.1);
   border-radius: 10px;
   border: none;
 }
-
-.item:hover .itemRightTitle h3 {
+.item:not(.disable):hover .itemRightTitle h3 {
   color: #47b3a7;
 }
 
@@ -209,7 +208,7 @@
   color: #47b3a7;
 }
 .detailProject p {
-  color: #47b3a7;
+  color: white;
   margin-top: 10px;
 }
 .detailProject .close {

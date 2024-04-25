@@ -7,9 +7,13 @@ export interface IProject {
   descFE?: string;
   descBE?: string;
   subDesc: string;
-  linkWeb: string;
-  linkGit: string[];
+  linkWeb: link[];
+  linkGit: link[];
   categories: ICategories[];
+}
+interface link {
+  name: string;
+  link: string;
 }
 export const project: IProject[] = [
   {
@@ -19,13 +23,28 @@ export const project: IProject[] = [
     descFE:
       "Fe use redux for storing data when fetching data from backend and socketIo to communicate real time to backend, many custom hooks.",
     descBE:
-      "Be use JWT to authenticate, CRUD posts share comment like posts, add friend and use socketIo to communicate. Deploying by docker in linux server.",
+      "Be use JWT to authenticate, CRUD posts share comment like posts, add friend and use socketIo to communicate.",
     subDesc:
       "Web to create for communication and post a posts to friend see it. ",
-    linkWeb: "",
+    linkWeb: [
+      {
+        name: "Frontend",
+        link: "http://ducozil1003.io.vn:3000/",
+      },
+      {
+        name: "Backend",
+        link: "http://ducozil1003.io.vn:3009/",
+      },
+    ],
     linkGit: [
-      "https://github.com/minhduc1003/social-app",
-      "https://github.com/minhduc1003/social-app-backend",
+      {
+        name: "Frontend",
+        link: "https://github.com/minhduc1003/social-app",
+      },
+      {
+        name: "Backend",
+        link: "https://github.com/minhduc1003/social-app-backend",
+      },
     ],
     categories: [
       {
@@ -36,6 +55,10 @@ export const project: IProject[] = [
         id: 2,
         name: "NodeJs",
       },
+      {
+        id: 3,
+        name: "Docker",
+      },
     ],
   },
   {
@@ -43,14 +66,28 @@ export const project: IProject[] = [
     image: "/blog.png",
     title: "Blog Website",
     descFE: "Use angular http service to fetch data from backend.",
-    descBE:
-      "Be use JWT to authenticate, CRUD blog. Deploying by docker in linux server.",
+    descBE: "Be use JWT to authenticate, CRUD blog.",
     subDesc:
       "Web blogs are created for authors to share information, knowledge, opinions and experiences with readers.",
-    linkWeb: "",
+    linkWeb: [
+      {
+        name: "Frontend",
+        link: "http://ducozil1003.io.vn:3003/",
+      },
+      {
+        name: "Backend",
+        link: "http://ducozil1003.io.vn:9001/swagger/index.html",
+      },
+    ],
     linkGit: [
-      "https://github.com/minhduc1003/blog-angular-fe",
-      "https://github.com/minhduc1003/blog-.Net-be",
+      {
+        name: "Frontend",
+        link: "https://github.com/minhduc1003/blog-angular-fe",
+      },
+      {
+        name: "Backend",
+        link: "https://github.com/minhduc1003/blog-.Net-be",
+      },
     ],
     categories: [
       {
@@ -61,6 +98,10 @@ export const project: IProject[] = [
         id: 2,
         name: "ASP.NET",
       },
+      {
+        id: 3,
+        name: "Docker",
+      },
     ],
   },
   {
@@ -68,11 +109,24 @@ export const project: IProject[] = [
     image: "/cf.png",
     title: "CrowFunding",
     descFE: "Fe use redux for storing data when fetching data from backend.",
-    descBE:
-      "Be use JWT to authenticate, CRUD campaign. Deploying by docker in linux server.",
+    descBE: "Be use JWT to authenticate, CRUD campaign.",
     subDesc: "Web to create donations campaigns. ",
-    linkWeb: "",
-    linkGit: ["https://github.com/minhduc1003/crowFunding"],
+    linkWeb: [
+      {
+        name: "Frontend",
+        link: "http://ducozil1003.io.vn:3002/",
+      },
+      {
+        name: "Backend",
+        link: "http://ducozil1003.io.vn:3001/",
+      },
+    ],
+    linkGit: [
+      {
+        name: "Frontend",
+        link: "https://github.com/minhduc1003/crowFunding",
+      },
+    ],
     categories: [
       {
         id: 1,
@@ -82,6 +136,10 @@ export const project: IProject[] = [
         id: 2,
         name: "NodeJs",
       },
+      {
+        id: 3,
+        name: "Docker",
+      },
     ],
   },
   {
@@ -90,8 +148,18 @@ export const project: IProject[] = [
     title: "Movie web",
     descFE: "Fetching data from themoviedb",
     subDesc: "Watch currently available movies. ",
-    linkWeb: "",
-    linkGit: ["https://github.com/minhduc1003/movie-app"],
+    linkWeb: [
+      {
+        name: "Frontend",
+        link: "http://ducozil1003.io.vn:3004/",
+      },
+    ],
+    linkGit: [
+      {
+        name: "Frontend",
+        link: "https://github.com/minhduc1003/movie-app",
+      },
+    ],
     categories: [
       {
         id: 1,

@@ -1,13 +1,13 @@
 export interface IExp {
-  id: number,
-  time: string,
-  title: string,
-  desc: string,
-  categories: ICategories[]
+  id: number;
+  time: string;
+  title: string;
+  desc: string;
+  categories: ICategories[];
 }
 export interface ICategories {
-  id: number,
-  name: string
+  id: number;
+  name: string;
 }
 export const exp: IExp[] = [
   {
@@ -26,8 +26,12 @@ export const exp: IExp[] = [
       },
       {
         id: 3,
-        name: "AngularJs"
-      }
+        name: "AngularJs",
+      },
+      {
+        id: 4,
+        name: "Docker",
+      },
     ],
   },
   {
@@ -43,7 +47,7 @@ export const exp: IExp[] = [
       {
         id: 2,
         name: "Nextjs",
-      }
+      },
     ],
   },
   {
@@ -62,12 +66,12 @@ export const exp: IExp[] = [
       },
       {
         id: 3,
-        name: "Redux"
+        name: "Redux",
       },
       {
         id: 4,
-        name: "More..."
-      }
+        name: "More...",
+      },
     ],
   },
   {
@@ -86,12 +90,12 @@ export const exp: IExp[] = [
       },
       {
         id: 3,
-        name: "Javascript"
+        name: "Javascript",
       },
       {
         id: 4,
-        name: "Git"
-      }
+        name: "Git",
+      },
     ],
-  }
+  },
 ];

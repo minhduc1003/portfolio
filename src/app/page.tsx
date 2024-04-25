@@ -50,8 +50,6 @@ export default function Home() {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    console.log(scroll);
-    console.log(active);
     () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -63,7 +61,7 @@ export default function Home() {
           <div className={style.textWrapper}>
             <div className={style.textHeader}>
               <h1>Minh Duc</h1>
-              <h3>Front-End and Back-End Engineer</h3>
+              <h3>frontend and backend web developer</h3>
               <p>I build exceptional and accessible experiences for the web.</p>
             </div>
             <div className={style.nav}>
@@ -89,12 +87,12 @@ export default function Home() {
             </a>
           </div>
           <div className={style.linkIcon}>
-            <a href="">
+            <a href="https://github.com/minhduc1003" target="_blank">
               <FontAwesomeIcon icon={faGithub} color="#808da2" size="xl" />
             </a>
-            <a href="">
+            <p>
               <FontAwesomeIcon icon={faEnvelope} color="#808da2" size="xl" />
-            </a>
+            </p>
           </div>
         </aside>
         <aside className={style.rightSide}>
@@ -104,7 +102,7 @@ export default function Home() {
               started learning the fundamentals of the web two years ago because
               I liked technology. I wanted to learn about web development. At
               the moment, I have a lot of experience in both front-end and
-              back-end knowledge
+              back-end web knowledge
             </p>
             <p>
               These days, my key priorities are learning to construct mining set
