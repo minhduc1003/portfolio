@@ -151,7 +151,7 @@ export const project: IProject[] = [
     linkWeb: [
       {
         name: "Frontend",
-        link: "http://ducozil1003.io.vn:3004/",
+        link: "https://movie-app-indol-zeta-87.vercel.app/",
       },
     ],
     linkGit: [
