@@ -63,6 +63,46 @@ export const project: IProject[] = [
   },
   {
     id: 2,
+    image: "/park.png",
+    title: "Smart Parking System",
+    descFE:
+      "Frontend built with ReactJS for web and React Native for mobile platforms, real-time parking slot status updated via WebSocket, allowing users to book and view parking availability easily.",
+    descBE:
+      "Backend developed using NodeJS/Express and MongoDB to handle parking data, booking operations, and real-time updates through WebSocket connections.",
+    subDesc:
+      "A smart parking management system that enables users to reserve parking slots and monitor lot status in real-time via web and mobile applications.",
+    linkWeb: [],
+    linkGit: [
+      {
+        name: "All source",
+        link: "https://github.com/minhduc1003/Smart-Parking-System",
+      },
+    ],
+    categories: [
+      {
+        id: 1,
+        name: "ReactJS",
+      },
+      {
+        id: 2,
+        name: "React Native",
+      },
+      {
+        id: 3,
+        name: "NodeJS",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+      },
+      {
+        id: 5,
+        name: "C ++",
+      },
+    ],
+  },
+  {
+    id: 3,
     image: "/blog.png",
     title: "Blog Website",
     descFE: "Use angular http service to fetch data from backend.",
@@ -105,7 +145,7 @@ export const project: IProject[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: "/cf.png",
     title: "CrowFunding",
     descFE: "Fe use redux for storing data when fetching data from backend.",
@@ -143,7 +183,7 @@ export const project: IProject[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     image: "/movie.png",
     title: "Movie web",
     descFE: "Fetching data from themoviedb",

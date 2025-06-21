@@ -12,7 +12,27 @@ export interface ICategories {
 export const exp: IExp[] = [
   {
     id: 1,
-    time: "25/9/2023-20/12/2023",
+    time: "23/9/2024  5/3/2025",
+    title: "Working at VNPT-IT",
+    desc: "Developed frontend components and backend APIs for a low-code platform using ReactJS and Spring Boot.",
+    categories: [
+      {
+        id: 1,
+        name: "ReactJS",
+      },
+      {
+        id: 3,
+        name: "Spring Boot",
+      },
+      {
+        id: 4,
+        name: "Docker",
+      },
+    ],
+  },
+  {
+    id: 2,
+    time: "25/9/2023  20/12/2023",
     title: "Working at SAVIS group",
     desc: "I work as a .Net, Angular, and AngularJs intern at Savis Group.",
     categories: [
@@ -35,7 +55,7 @@ export const exp: IExp[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     time: "2023",
     title: "Learning basics Nodejs and Nextjs",
     desc: "I have started learning basics Nodejs and Nextjs",
@@ -51,7 +71,7 @@ export const exp: IExp[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     time: "2021",
     title: "Learning basics react framework",
     desc: "I have started learning basics SCSS and ReactJs and Redux and more library working with React",
@@ -75,7 +95,7 @@ export const exp: IExp[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     time: "2021",
     title: "Learning basics web development",
     desc: "I have started learning basics HTML, CSS, Javascript, git",

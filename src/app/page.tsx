@@ -61,7 +61,7 @@ export default function Home() {
           <div className={style.textWrapper}>
             <div className={style.textHeader}>
               <h1>Minh Duc</h1>
-              <h3>frontend and backend web developer</h3>
+              <h3>Frontend And Backend Web Developer</h3>
               <p>I build exceptional and accessible experiences for the web.</p>
             </div>
             <div className={style.nav}>
@@ -98,11 +98,11 @@ export default function Home() {
         <aside className={style.rightSide}>
           <div id="about" className={style.about}>
             <p>
-              Hi there! Duc is my name, and I&apos;m currently 20 years old. I
-              started learning the fundamentals of the web two years ago because
-              I liked technology. I wanted to learn about web development. At
-              the moment, I have a lot of experience in both front-end and
-              back-end web knowledge
+              Hi there! Duc is my name, and I&apos;m currently 22 years old. I
+              started learning the fundamentals of the web four years ago
+              because I liked technology. I wanted to learn about web
+              development. At the moment, I have a lot of experience in both
+              front-end and back-end web knowledge
             </p>
             <p>
               These days, my key priorities are learning to construct mining set
